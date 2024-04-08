@@ -1,0 +1,5 @@
+config SHIELD_CRUST_LEFT
+    def_bool $(shields_list_contains, crust_left)
+
+config SHIELD_CRUST_RIGHT
+    def_bool $(shields_list_contains, crust_right)
