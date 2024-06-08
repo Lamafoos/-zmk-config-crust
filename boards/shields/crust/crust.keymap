@@ -3,16 +3,16 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-                base_layer {
+        base_layer {
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓                                ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ 
-// ┃     =     ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃     8     ┃                                ┃     7     ┃     8     ┃     9     ┃     0     ┃     P     ┃     G     ┃           ┃ 
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃           ┃                                ┃     7     ┃     8     ┃     9     ┃     0     ┃     P     ┃     G     ┃           ┃ 
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫                                ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   
-// ┃    TAB    ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃           ┃                                ┃           ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃           ┃                                ┃           ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓        ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃           ┃           ┃        ┃           ┃     Q     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃           ┃
+// ┃           ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃     3     ┃           ┃        ┃           ┃     Q     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫        ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃     ⇧     ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃           ┃           ┃        ┃           ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫        ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -21,14 +21,13 @@
 
 
             bindings = <
-    &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 8                                                                &mo 10  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &to 1                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-    &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
-    &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-    &mo 9  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 9
+                &kp EQUAL   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &to 0                                   &kp K_COFFEE    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
+                &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &to 1                                   &kp PSCRN       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSLH
+                &kp ESC     &kp A       &kp S       &kp D       &kp F       &kp G       &to 3       &kp LALT        &kp LGUI    &kp INS         &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
+                &kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B       &kp LCTRL   &kp HOME        &kp PG_UP   &kp RCTRL       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHIFT
+                &trans      &kp GRAVE   &kp CAPS    &kp LEFT    &kp RIGHT   &kp BSPC    &kp DEL     &kp END         &kp PG_DN   &kp ENTER       &kp SPACE   &kp UP      &kp DOWN    &kp LBKT    &kp RBKT    &trans
             >;
-
-                };
- 
+        };
     };
 };
+
