@@ -21,31 +21,31 @@
             //                                                 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp EQUAL   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &to 0                                   &kp K_COFFEE    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
-                &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &to 1                                   &kp PSCRN       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSLH
-                &kp ESC     &kp A       &kp S       &kp D       &kp F       &kp G       &to 3       &kp LALT        &kp LGUI    &kp INS         &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
-                &kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B       &kp LCTRL   &kp HOME        &kp PG_UP   &kp RCTRL       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHIFT
-                &trans      &kp GRAVE   &kp CAPS    &kp LEFT    &kp RIGHT   &kp BSPC    &kp DEL     &kp END         &kp PG_DN   &kp ENTER       &kp SPACE   &kp UP      &kp DOWN    &kp LBKT    &kp RBKT    &trans
+&kp EQUAL   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &to 0                           &kp K_COFFEE  &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB     &kp Q      &kp W     &kp E     &kp R      &kp T     &to 1                           &kp PSCRN     &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC     &kp A      &kp S     &kp D     &kp F      &kp G     &to 2      &kp LALT  &kp LGUI   &kp INS       &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHIFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &kp LCTRL  &kp HOME  &kp PG_UP  &kp RCTRL     &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
+&trans      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC  &kp DEL    &kp END   &kp PG_DN  &kp ENTER     &kp SPACE  &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &trans
             >;
         };
 
         colemak-dh {
             bindings = <
-&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &to 0                                                                             &kp K_COFFEE     &kp NUMBER_6  &kp N7    &kp N8     &kp N9            &kp N0             &kp MINUS
-&kp TAB         &kp Q         &kp W         &kp F         &kp P         &kp G   &to 1                                                                             &kp PRINTSCREEN  &kp J         &kp L     &kp U      &kp Y             &kp SEMICOLON      &kp BACKSLASH
-&kp GRAVE       &kp A         &kp R         &kp S         &kp T         &kp D   &to 2      &kp LEFT_COMMAND  &kp K_FORWARD      &kp K_FORWARD  &kp RIGHT_COMMAND  &kp INS          &kp H         &kp N     &kp E      &kp I             &kp O              &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B                                &kp LEFT_ALT       &kp RIGHT_ALT                                      &kp K         &kp M     &kp COMMA  &kp PERIOD        &kp SLASH          &kp RSHIFT
-&trans          &trans        &trans        &kp LEFT      &kp RIGHT             &kp SPACE  &kp ENTER         &kp BACKSPACE      &kp DEL        &kp ENTER          &kp BACKSPACE                  &kp DOWN  &kp UP     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &to 0                                          &kp K_COFFEE       &kp NUMBER_6  &kp N7        &kp N8     &kp N9            &kp N0             &kp MINUS
+&kp TAB         &kp Q         &kp W         &kp F         &kp P         &kp B          &to 1                                          &kp PRINTSCREEN    &kp J         &kp L         &kp U      &kp Y             &kp SEMICOLON      &kp BACKSLASH
+&kp ESCAPE      &kp A         &kp R         &kp S         &kp T         &kp G          &to 2             &kp LEFT_ALT  &kp LEFT_GUI   &kp INS            &kp M         &kp N         &kp E      &kp I             &kp O              &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp D         &kp V          &kp LEFT_CONTROL  &kp HOME      &kp PG_UP      &kp RIGHT_CONTROL  &kp K         &kp H         &kp COMMA  &kp PERIOD        &kp SLASH          &kp RSHIFT
+&trans          &kp GRAVE     &kp CAPS      &kp LEFT      &kp RIGHT     &kp BACKSPACE  &kp DEL           &kp END       &kp PAGE_DOWN  &kp ENTER          &kp SPACE     &kp UP_ARROW  &kp DOWN   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
             >;
         };
 
         dvorak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
