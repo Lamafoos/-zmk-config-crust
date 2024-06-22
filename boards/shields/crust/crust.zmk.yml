@@ -1,0 +1,11 @@
+file_format: "1"
+id: crust
+name: crust
+type: shield
+url: https://github.com/Lamafoos/-zmk-config-crust
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - crust_left
+  - crust_right
