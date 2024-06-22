@@ -22,3 +22,5 @@ include:
     shield: crust_left
   - board: seeeduino_xiao_ble
     shield: crust_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
