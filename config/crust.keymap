@@ -46,6 +46,11 @@
             bindings = <&bootloader>;
             key-positions = <60 61 74 75>;
         };
+
+        bt-profile-clear-all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <60 34 20 6>;
+        };
     };
 
     keymap {
